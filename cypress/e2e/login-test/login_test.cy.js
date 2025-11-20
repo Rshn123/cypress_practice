@@ -10,4 +10,12 @@ describe('Login Test Suite', () => {
         cy.get('[placeholder="Password"]').type('admin123');
         cy.get('button[type="submit"]').click();
     })
+
+     it('should log in with invalid credentials', () => {
+        cy.get('[placeholder="Username"]').type('Admin3');
+        cy.get('[placeholder="Password"]').type('admin123');
+        cy.get('button[type="submit"]').click();
+    })
+
+
 })
