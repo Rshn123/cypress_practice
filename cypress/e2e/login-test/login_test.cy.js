@@ -9,5 +9,8 @@ describe('Login Test Suite', () => {
         cy.get('[placeholder="Username"]').type('Admin');
         cy.get('[placeholder="Password"]').type('admin123');
         cy.get('button[type="submit"]').click();
+        
+        // Verify successful login by checking for the presence of the dashboard   
+        cy.url().should('include', '/dashboard');
     })
 })
