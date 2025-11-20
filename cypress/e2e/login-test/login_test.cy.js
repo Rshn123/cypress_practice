@@ -8,5 +8,6 @@ describe('Login Test Suite', () => {
     it('should log in with valid credentials', () => {
         cy.get('[placeholder="Username"]').type('Admin');
         cy.get('[placeholder="Password"]').type('admin123');
+        cy.get('button[type="submit"]').click();
     })
 })
