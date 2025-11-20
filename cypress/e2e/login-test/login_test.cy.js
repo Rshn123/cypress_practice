@@ -1,0 +1,12 @@
+///<reference types="cypress" />
+
+describe('Login Test Suite', () => {
+    beforeEach(() => {
+        cy.visit('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login');
+    });
+
+    it('should log in with valid credentials', () => {
+        cy.get('[placeholder="Username"]').type('Admin');
+        cy.get('[placeholder="Password"]').type('admin123');
+    })
+})
