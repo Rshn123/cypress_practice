@@ -18,6 +18,7 @@ describe('Login Test Suite', () => {
 
         // Assertion for error message
         expect(true).to.be.true;
+        expect(true).to.be.true;
     })
 
 
